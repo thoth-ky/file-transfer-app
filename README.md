@@ -1,5 +1,7 @@
 # FILE TRANSFER APP
 
+[![CircleCI](https://circleci.com/gh/thoth-ky/file-transfer-app/tree/master.svg?style=svg)](https://circleci.com/gh/thoth-ky/file-transfer-app/tree/master)
+
 This is a simple rails application that allows a user to do file transfers to and from a remote server. The App has been developed and tested on Mac OS 10.14.5
 
 ## System dependencies
@@ -36,7 +38,7 @@ This is a simple rails application that allows a user to do file transfers to an
   ```
 
 ## Deployment instructions
-The app has been set up to deploy on Heroku. You can check out the deployed app [here]()
+The app has been set up to deploy on Heroku. You can check out the deployed app [here](https://file-transfer-app-ky.herokuapp.com/)
 
 On your local machine, you can deploy by running the following command:
 ```zsh
