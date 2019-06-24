@@ -1,6 +1,7 @@
 # FILE TRANSFER APP
 
-[![CircleCI](https://circleci.com/gh/thoth-ky/file-transfer-app/tree/master.svg?style=svg)](https://circleci.com/gh/thoth-ky/file-transfer-app/tree/master)
+[![CircleCI](https://circleci.com/gh/thoth-ky/file-transfer-app/tree/develop.svg?style=svg)](https://circleci.com/gh/thoth-ky/file-transfer-app/tree/develop) 
+[![Coverage Status](https://coveralls.io/repos/github/thoth-ky/file-transfer-app/badge.svg?branch=develop)](https://coveralls.io/github/thoth-ky/file-transfer-app?branch=develop)
 
 This is a simple rails application that allows a user to do file transfers to and from a remote server. The App has been developed and tested on Mac OS 10.14.5
 
