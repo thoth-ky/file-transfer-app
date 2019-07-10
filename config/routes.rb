@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'index#index'
+  root to: 'documents#index'
   devise_for :users
   
   resources :documents, only: %i[index show create new]
