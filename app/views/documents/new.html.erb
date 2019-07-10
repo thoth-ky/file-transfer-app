@@ -1,0 +1,22 @@
+<div>
+  <h2>Upload A Document</h2>
+  <% flash.each do |message_type, messages| %>
+    <div class="alert alert-<%= message_type %>">
+      <% messages.each do |message| %>
+        <li><%= message%></li>
+      <% end %>
+    </div>
+  <% end %>
+  
+  <%= form_for @document, html: {class: 'form'} do |f| %>
+    <div class="field">
+      <%= f.label :file_name %>
+      <%= f.text_field :file_name, required: true %>
+    </div>
+    <div class="field">
+      <%= f.label :file %>
+      <%= f.file_field :file, required: true %>
+    </div>
+    <%= f.submit "Upload"%>
+  <% end%>
+</div>
