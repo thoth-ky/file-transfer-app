@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   devise_for :users
   
   resources :documents, only: %i[index show create new]
+  get '/index', to: "index#index"
 end

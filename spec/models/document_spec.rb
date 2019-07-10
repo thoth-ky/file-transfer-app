@@ -8,11 +8,11 @@ RSpec.describe Document, type: :model do
       file_name: "Test",
       user: create(:user)
     )
-    document.file.attach(
+    document.files.attach(
       io: File.open("spec/fixtures/example.jpg"),
       filename: "example.jpg"
     )
     document.save!
-    expect(document.file.attached?).to be(true)
+    expect(document.files.attached?).to be(true)
   end
 end

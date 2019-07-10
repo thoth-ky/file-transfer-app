@@ -3,7 +3,7 @@
 FactoryBot.define do
   factory :document do
     file_name { "MyString" }
-    file { File.open("fixtures/example.jpg") }
-    user { nil }
+    files { { io: File.open("spec/fixtures/example.jpg"), filename: "example.jpg" } }
+    user { create(:user) }
   end
 end

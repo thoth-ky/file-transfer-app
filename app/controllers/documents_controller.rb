@@ -16,7 +16,7 @@ class DocumentsController < ApplicationController
     document.user = current_user
     if document.valid?
       document.save!
-      flash[:success] =["Document was uploaded successfully"]
+      flash[:success] = ["Document was uploaded successfully"]
       redirect_to documents_path
     else
       flash[:error] = document.errors.full_messages()
