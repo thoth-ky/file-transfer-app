@@ -2,7 +2,7 @@
 
 class Document < ApplicationRecord
   belongs_to :user
-  has_one_attached :file
-  validates :file, presence: true
+  has_many_attached :files
+  validates :files, presence: true
   validates :file_name, uniqueness: true
 end

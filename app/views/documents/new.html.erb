@@ -7,8 +7,8 @@
       <%= f.text_field :file_name, required: true %>
     </div>
     <div class="field">
-      <%= f.label :file %>
-      <%= f.file_field :file, required: true, multiple: true %>
+      <%= f.label :files %>
+      <%= f.file_field :files, required: true, multiple: true, direct_upload: true %>
     </div>
     <%= f.submit "Upload"%>
   <% end%>

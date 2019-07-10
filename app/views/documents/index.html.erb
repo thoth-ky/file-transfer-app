@@ -5,6 +5,9 @@
     <tr>
       <th>ID </th>
       <th>File Name </th>
+      <th>Files </th>
+      <th>Count </th>
+      <th><th>
       <th><th>
     </tr>
   </thead>
@@ -14,7 +17,13 @@
       <tr>
         <td><%= document.id%></td>
         <td><%= document.file_name%></td>
-        <td><%= link_to "Download", document_path(document), data: { confirm: "Are you sure you want to download this file?" } %></td>
+        <td>
+          <%document.files.each do |file| %>
+             <li><%= file.filename %></li>
+          <% end %>
+        </td>
+        <td><%= document.files.count%></td>
+        <td><%= link_to "Show", document_path(document) %></td>
       </tr>
     <% end %>
   </tbody>
