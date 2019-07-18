@@ -1,6 +1,7 @@
 # FILE TRANSFER APP
 
-[![CircleCI](https://circleci.com/gh/thoth-ky/file-transfer-app/tree/master.svg?style=svg)](https://circleci.com/gh/thoth-ky/file-transfer-app/tree/master)
+[![CircleCI](https://circleci.com/gh/thoth-ky/file-transfer-app/tree/develop.svg?style=svg)](https://circleci.com/gh/thoth-ky/file-transfer-app/tree/develop) 
+[![Coverage Status](https://coveralls.io/repos/github/thoth-ky/file-transfer-app/badge.svg?branch=develop)](https://coveralls.io/github/thoth-ky/file-transfer-app?branch=develop)
 
 This is a simple rails application that allows a user to do file transfers to and from a remote server. The App has been developed and tested on Mac OS 10.14.5
 
@@ -44,7 +45,11 @@ On your local machine, you can deploy by running the following command:
 ```zsh
   $ heroku local web
 ```
-
+## User Guide
+1. Access the site here [File Transfer App](https://file-transfer-app-ky.herokuapp.com/)
+2. Signup and create and account
+3. Once you login, you will be able to access all files uploaded, click on show to Preview or Download files
+4. Click on Upload New File to upload file, note that you can upload multiple files at once
 
 ## Author
   * Joseph Mutuku Kyalo

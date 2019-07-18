@@ -12,6 +12,7 @@ AllCops:
     - '**/vendor/**/*'
     - 'db/**/*'
     - 'config/**/*'
+    - 'node_modules/*'
 
 # Prefer &&/|| over and/or.
 Style/AndOr:
