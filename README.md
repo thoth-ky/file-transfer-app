@@ -45,7 +45,11 @@ On your local machine, you can deploy by running the following command:
 ```zsh
   $ heroku local web
 ```
-
+## User Guide
+1. Access the site here [File Transfer App](https://file-transfer-app-ky.herokuapp.com/)
+2. Signup and create and account
+3. Once you login, you will be able to access all files uploaded, click on show to Preview or Download files
+4. Click on Upload New File to upload file, note that you can upload multiple files at once
 
 ## Author
   * Joseph Mutuku Kyalo
