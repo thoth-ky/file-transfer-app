@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+ <div>
+  <div>Files</div>
+  <div>
+    <% @document.files.each do |file| %>
+      <li>
+        <h3><%= file.filename %></h3>
+        <%= link_to "Preview", rails_blob_path(file, disposition: "preview"), target: :blank %>
+        <%= link_to "Download", rails_blob_path(file, disposition: "attachment") %>
+      </li>
+    <% end %>
+  </div>
+</div>
+
+<%= link_to 'Back', documents_path %>
